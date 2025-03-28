@@ -1,0 +1,20 @@
+.qodo
+# Ignore backend dependencies (example for Python)
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.log
+
+# Ignore frontend dependencies (example for Node.js)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.cache/
+
+# Common OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
