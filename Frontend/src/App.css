@@ -1,44 +1,79 @@
-@import "tailwindcss";
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Global reset to remove default padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent extra scrolling */
+  font-family: Arial, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Flexbox layout for entire screen */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Sidebar: Fixed on the left */
+.sidebar {
+  width: 250px; /* Adjust width */
+  height: 100vh;
+  background: #242323;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease;
 }
 
-.card {
-  padding: 2em;
+.sidebar.collapsed {
+  width: 60px; /* Collapsed width */
 }
 
-.read-the-docs {
-  color: #888;
+/* Main content area */
+.main-content {
+  margin-left: 250px; /* Same as sidebar width */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.collapsed + .main-content {
+  margin-left: 60px;
+}
+
+/* Navbar: Fixed at the top */
+.navbar {
+  height: 60px;
+  width: 100%;
+  background: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  right: 0;
+  transition: left 0.3s ease;
+}
+
+.collapsed + .navbar {
+  left: 60px;
+}
+
+/* Content below navbar */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-top: 60px;
+  overflow-y: auto;
 }

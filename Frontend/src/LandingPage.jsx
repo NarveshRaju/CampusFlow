@@ -1,24 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./LandingPage.css";
 
 const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-black text-white">
-      <h1 className="text-4xl font-bold mb-6 text-center">Welcome to CampusFlow</h1>
-      
-      <div className="space-x-4">
-        <button
-          onClick={() => navigate("/student/login")}
-          className="px-6 py-2 rounded-lg bg-green-500 text-white font-semibold hover:bg-green-600 transition duration-300"
-        >
+    <div className="landing-container">
+      <h1>Welcome to CampusFlow</h1>
+      <div className="button-group">
+        <button className="login-button student" onClick={() => navigate("/student/login")}>
           Student Login
         </button>
-        <button
-          onClick={() => navigate("/faculty/login")}
-          className="px-6 py-2 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition duration-300"
-        >
+        <button className="login-button faculty" onClick={() => navigate("/faculty/login")}>
           Faculty Login
         </button>
       </div>

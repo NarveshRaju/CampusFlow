@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #242323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent unwanted scrollbars */
+  }
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #242323; /* Dark background */
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1); /* Transparent effect */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    backdrop-filter: blur(10px);
+  }
+  
+  h2 {
+    color: #ec8eff; /* Light purple */
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #ec8eff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #d87be6; /* Darker shade of purple */
+  }
+  
+  .alert {
+    color: #ff4c4c;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .login-box {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+  

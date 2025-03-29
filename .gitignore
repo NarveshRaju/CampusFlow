@@ -4,7 +4,7 @@ backend/venv/
 backend/__pycache__/
 backend/*.pyc
 backend/*.log
-
+.env
 # Ignore frontend dependencies (example for Node.js)
 frontend/node_modules/
 frontend/build/

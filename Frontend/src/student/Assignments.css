@@ -1,0 +1,138 @@
+/* Full screen height and width */
+.assignments-container {
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Enables scrolling */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #1e1e1e; /* Dark Theme */
+  }
+  
+  /* Center title at the top */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Assignments occupy full width */
+  .assignment-box {
+    width: 90%; /* Takes almost full screen width */
+    max-width: 1000px; /* Prevents it from being too stretched */
+    margin: 0 auto 20px; /* Center horizontally and add spacing */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+  }
+  
+  /* Ensuring proper spacing for details */
+  .assignment-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ec8eff;
+  }
+  
+  .assignment-info p {
+    margin: 5px 0;
+  }
+  
+  /* Drag & Drop box should be full width */
+  .dropzone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropzone {
+    border: 2px dashed #ec8eff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropzone:hover {
+    background-color: #444;
+  }
+  
+  /* Upload button */
+  .upload-btn {
+    margin-top: 10px;
+    background-color: #ec8eff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .upload-btn:hover {
+    background-color: #c76ad6;
+  }
+  
+  /* Submit & Turned-In Text */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .assignments-page {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .assignments-container {
+    margin-left: 250px; /* Adjust according to your sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust if the sidebar is collapsed */
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .submitted-text {
+    color: #00ff00;
+    font-weight: bold;
+  }
+
+  /* Turn In button */
+.turn-in-btn {
+    background-color: #ec8eff;  /* Light Purple */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .turn-in-btn:hover {
+    background-color: #c76ad6; /* Darker Purple */
+  }
+  
+  /* Allow scrolling when content exceeds viewport */
+  .assignments-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .assignments-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  

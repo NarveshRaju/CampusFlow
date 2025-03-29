@@ -1,0 +1,48 @@
+/* LandingPage.css */
+.landing-container {
+    background-color: #242323; /* Dark background */
+    color: white;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+  }
+  
+  .login-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .student {
+    background-color: #ec8eff; /* Light Purple */
+    color: #242323; /* Dark text for contrast */
+  }
+  
+  .faculty {
+    background-color: #8e44ad; /* Dark Purple */
+    color: white;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
