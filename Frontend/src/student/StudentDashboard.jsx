@@ -21,6 +21,8 @@ const StudentDashboard = () => {
             <div className="p-6 bg-blue-200 rounded-lg shadow-md">📄 Assignments</div>
             <div className="p-6 bg-green-200 rounded-lg shadow-md">📊 Learning Analytics</div>
             <div className="p-6 bg-yellow-200 rounded-lg shadow-md">💾 Code Repository</div>
+            <div className="p-6 bg-yellow-200 rounded-lg shadow-md">📓 Notes</div>
+
           </div>
         </div>
       </div>

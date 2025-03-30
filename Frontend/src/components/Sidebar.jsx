@@ -10,12 +10,16 @@ const Sidebar = ({ userType, isCollapsed, setIsCollapsed }) => {
           { name: "Courses", path: "/student/courses" },
           { name: "Learning Analytics", path: "/student/analytics" },
           { name: "Code Repository", path: "/student/repository" },
+          { name: "Notes", path: "/student/notes" },
+
         ]
       : [
           { name: "Dashboard", path: "/faculty/dashboard" },
           { name: "Create Assignments", path: "/faculty/createassignment" },
+          { name: "Create Content", path: "/faculty/createcontent" },
           { name: "Evaluation", path: "/faculty/evaluation" },
           { name: "AI-Automation", path: "/faculty/aiautomation" },
+          { name: "View Assignment", path: "/faculty/ViewAssignment" },
         ];
 
   return (

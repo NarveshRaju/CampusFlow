@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "lucide-react": "^0.485.0"
+    "@octokit/rest": "^21.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^0.485.0",
+    "mongoose": "^8.13.1",
+    "openai": "^4.90.0",
+    "pdfkit": "^0.16.0"
   }
 }

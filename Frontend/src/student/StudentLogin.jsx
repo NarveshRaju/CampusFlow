@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config/firebase.js"; 
+import { auth } from "../config/firebase.js";
 import "../style/Login.css"; // Import CSS
 
 const StudentLogin = () => {
@@ -14,6 +14,7 @@ const StudentLogin = () => {
       const email = `${rollNumber}@campusflow.com`.toLowerCase();
       await signInWithEmailAndPassword(auth, email, password);
       localStorage.setItem("userType", "student");
+      localStorage.setItem("rollNumber", rollNumber); // Store the rollNumber in localStorage
       navigate("/student/dashboard");
     } catch (error) {
       alert(`Login Error: ${error.message}`);
